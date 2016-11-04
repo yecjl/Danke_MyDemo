@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="1dip"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dip"
+        android:paddingTop="5dip" >
+
+        <ImageView
+            android:id="@+id/circle_img"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/header" />
+
+        <RelativeLayout
+            android:id="@+id/contentBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/circle_img"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/circle_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="名字"
+                android:textColor="@color/tsName"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/circle_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/circle_title"
+                android:layout_marginTop="10dp"
+                android:text="名字名字名字名字名字名字名字名字名字"
+                android:textColor="@color/pcName"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/logImageBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/circle_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/circle_time"
+                android:layout_width="wrap_content"
+                android:layout_height="42dip"
+                android:layout_below="@id/logImageBox"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="时间"
+                android:textColor="@color/f9C9C9C"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/circle_comment"
+                android:layout_width="30dip"
+                android:layout_height="22dip"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/logImageBox"
+                android:layout_marginTop="13dip"
+                android:background="@drawable/tsq_reply"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/commentBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contentBox"
+            android:layout_toRightOf="@id/circle_img"
+            android:background="@mipmap/afw"
+            android:orientation="vertical"
+            android:paddingBottom="2dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="2dip"
+            android:paddingTop="20dip"
+            android:visibility="gone" >
+
+            <com.study.friendcircledemo.view.MyWrapListView
+                android:id="@+id/circle_comment_list"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:divider="@color/gray_ef"
+                android:dividerHeight="1px"
+                android:fadingEdge="none" >
+            </com.study.friendcircledemo.view.MyWrapListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/tempColor" />
+
+</LinearLayout>

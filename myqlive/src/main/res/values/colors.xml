@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#FF000000</color>
+    <!--198,60,38-->
+    <color name="nav_red">#c63c26</color>
+    <!--159,156,153-->
+    <color name="nav_gray">#9f9c99</color>
+    <!--63,57,51-->
+    <color name="titleBlack">#3f3933</color>
+    <color name="blue">#0055FF</color>
+    <!--142,142,142-->
+    <color name="priceOlder">#8e8e8e</color>
+    <!--51,51,51-->
+    <color name="buyNum">#333333</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="guanzhu_green">#38c382</color>
+    <color name="madian_back">#efeeed</color>
+    <color name="cart_null">#a09c99</color>
+    <color name="cart_null_back">#FFEFEFEC</color>
+    <color name="me_des">#3E3933</color>
+    <color name="me_con">#87847F</color>
+    <color name="me_dingdan">#57524C</color>
+    <color name="hint_color">#A09C9C</color>
+    <color name="shape_bg">#4E4E4E</color>
+    <color name="register_press">#1BB26B</color>
+    <color name="login_press">#AE3522</color>
+    <color name="btn_moren">#CECBC8</color>
+    <color name="login_bg">#C0000000</color>
+    <color name="exit">#C73C27</color>
+    <color name="order_color">#6f6b66</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="gift">#f4c201</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="video_bg">#3E3A32</color>
+    <color name="popup_bg">#99000000</color>
+    <color name="line">#FFEFEFEC</color>
+    <color name="title_line">#dbdad9</color>
+    <color name="imgAlpha">#19000000</color>
+    <color name="desc">#74716e</color>
+    <color name="kuang">#ada4b3</color>
+    <color name="transparent_black">#BF000000</color><!--25%-->
+    <color name="transparent_black50">#7F000000</color><!--50%-->
+    <color name="transparent_black60">#59000000</color><!--60%-->
+    <color name="transparent_black70">#4C000000</color><!--70%-->
+    <color name="transparent_black75">#3F000000</color><!--75%-->
+    <color name="transparent_black80">#33000000</color><!--80%-->
+
+    <color name="transparent_white70">#4Cffffff</color><!--70%-->
+    <color name="transparent_white75">#3Fffffff</color><!--75%-->
+    <color name="transparent_white80">#33ffffff</color><!--80%-->
+    <color name="transparent_white85">#21ffffff</color><!--85%-->
+    <color name="transparent_white90">#19ffffff</color><!--90%-->
+
+</resources>

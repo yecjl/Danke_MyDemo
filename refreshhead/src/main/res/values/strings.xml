@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RefreshHead</string>
+    <string name="pull_to_down">下拉,返回商品详情</string>
+    <string name="pull_to_release">释放,返回商品详情</string>
+</resources>

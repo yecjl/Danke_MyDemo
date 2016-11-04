@@ -1,0 +1,93 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="banner_height">44dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="splash_icon_height">131dp</dimen>
+    <dimen name="splash_icon_width">86dp</dimen>
+    <dimen name="tiyan_height">44dp</dimen>
+    <dimen name="tiyan_widht">140dp</dimen>
+
+    <dimen name="padding">12dp</dimen>
+    <dimen name="padding21">6dp</dimen>
+    <dimen name="main_nav_height">49dp</dimen>
+    <dimen name="main_nav_padding">3.5dp</dimen>
+    <dimen name="video_thumb_height">81.5dp</dimen>
+    <dimen name="video_thumb_width">120dp</dimen>
+    <dimen name="video_des_margin">5dp</dimen>
+    <dimen name="video_height">255.5dp</dimen>
+
+    <dimen name="jingxuan_item_height">225dp</dimen>
+    <dimen name="title_height">44dp</dimen>
+    <dimen name="title_size">16sp</dimen>
+    <dimen name="point_margin">7dp</dimen>
+
+    <dimen name="madian_item_height">64dp</dimen>
+    <dimen name="madian_icon_size">40dp</dimen>
+    <dimen name="madian_icon_margin">12dp</dimen>
+    <dimen name="img_size">66dp</dimen>
+    <dimen name="img_size2">80dp</dimen>
+
+    <!--联系客服对话框宽度-->
+
+    <dimen name="cart_null_icon">113dp</dimen>
+    <dimen name="me_dingdan_height">57dp</dimen>
+
+    <dimen name="to_right_height">10dp</dimen>
+    <dimen name="to_right_width">6dp</dimen>
+    <dimen name="margin">7.5dp</dimen>
+    <dimen name="radius">3dp</dimen>
+    <dimen name="shape_border">1px</dimen>
+    <dimen name="dianpu_icon">65dp</dimen>
+    <dimen name="dianpu_icon1">92dp</dimen>
+    <dimen name="dianpu_icon3">70dp</dimen>
+    <dimen name="dianpu_icon2">105dp</dimen>
+    <dimen name="fenge">1px</dimen>
+    <dimen name="fenge2">2px</dimen>
+    <dimen name="border_head">2dp</dimen>
+    <dimen name="pass_height">45dp</dimen>
+
+    <dimen name="jieshao_width">280dp</dimen>
+    <!--码店介绍-->
+    <dimen name="jieshao_height">320dp</dimen>
+    <dimen name="btn_height">28dp</dimen>
+    <dimen name="me_round">76dp</dimen>
+    <dimen name="size5">5sp</dimen>
+    <dimen name="size6">6sp</dimen>
+    <dimen name="size8">8sp</dimen>
+    <dimen name="size10">10sp</dimen>
+    <dimen name="size11">11sp</dimen>
+    <dimen name="size12">12sp</dimen>
+    <dimen name="size13">13sp</dimen>
+    <dimen name="size14">14sp</dimen>
+    <dimen name="size15">15sp</dimen>
+    <dimen name="size16">16sp</dimen>
+    <dimen name="size17">17sp</dimen>
+    <dimen name="size18">18sp</dimen>
+    <dimen name="size20">20sp</dimen>
+    <dimen name="size26">26sp</dimen>
+    <dimen name="size30">30sp</dimen>
+    <dimen name="size32">32sp</dimen>
+    <dimen name="size50">50sp</dimen>
+    <dimen name="order_img_height">100dp</dimen>
+    <dimen name="order_img_padding">41dp</dimen>
+    <dimen name="saomiao">220dp</dimen>
+    <dimen name="saomiao_min">120dp</dimen>
+
+    <dimen name="qrcode_width">260dp</dimen>
+
+    <dimen name="cartlist_attr_item_margin">12dp</dimen>
+    <dimen name="cartlist_attr_item_img">65dp</dimen>
+    <dimen name="tab_height">2dp</dimen>
+
+    <dimen name="giveup_dialog_width">260dp</dimen>
+    <dimen name="giveup_dialog_height">138.5dp</dimen>
+
+    <dimen name="edit_area_height">180dp</dimen>
+    <dimen name="edit_area_height2">200dp</dimen>
+
+    <dimen name="tip_width">270dp</dimen>
+    <dimen name="tip_height">128dp</dimen>
+    <dimen name="tip_height1">100dp</dimen>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent_black">#90000000</color>
+    <color name="transparent_white">#50d0d0d0</color>
+    <color name="transparent">#ffffffff</color>
+    <color name="page_back">#FFE9EEF1</color>
+    <color name="grey_7f">#7f7f7f</color>
+    <color name="transparent_black_70">#b3000000</color>
+
+    <color name="btntextcolor">#0667fa</color>
+    <!--dialog中按钮字体颜色 -->
+    <color name="line_gray">#E0E0E0</color>
+    <color name="popup_bg">#8f000000</color>
+    <color name="line_bg">#CDCDCD</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="textBlack">#3f3933</color>
+</resources>

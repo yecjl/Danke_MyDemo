@@ -1,0 +1,1 @@
+include ':app', ':refreshhead', ':checkupdateservice', ':softinputdemo', ':friendcircledemo', ':bluetooth', ':printscreen', ':emotionkeyboard', ':stickyheader', ':stickylib', ':mysticky', ':mydispatchevent', ':marqueetext', ':myqlive', ':myframework'

@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">myFramework</string>
+    <string name="response_data_invalid">网络错误，请重试</string>
+    <string name="network_not_connected">网络未连接</string>
+    <string name="no_data">暂无数据...</string>
+
+    <string name="prompt">提示</string>
+    <string name="exit_app">你确定要退出应用吗?</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="dismiss">隐藏</string>
+    <string name="pull_to_down">下拉, 返回商品详情</string>
+    <string name="pull_to_release">释放, 返回商品详情</string>
+</resources>

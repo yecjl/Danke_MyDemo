@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titleBox"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip"
+    android:background="@color/wx_title_bg" >
+
+    <TextView
+        android:id="@+id/titleLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/titleLeft"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:background="@drawable/title_click"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:src="@drawable/title_back" >
+        </ImageView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/splitLine"
+        android:layout_width="2dip"
+        android:layout_height="30dip"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/titleLeft"
+        android:background="#192023" />
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="48dip"
+        android:layout_toRightOf="@id/splitLine"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="朋友圈"
+        android:textColor="@color/white"
+        android:textSize="18dip" />
+
+</RelativeLayout>

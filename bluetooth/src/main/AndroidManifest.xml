@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.study.bluetooth">
+
+    <!--蓝牙权限 请求一个连接、接受一个连接以及传输数据-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!--发现本地蓝牙设备-->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".bluetooth.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".bluetooth.ClientActivity" />
+        <activity android:name=".bluetooth.ServerActivity" />
+
+        <service android:name=".bluetoothUtil.BluetoothClientService" />
+        <service android:name=".bluetoothUtil.BluetoothServerService" />
+        <service android:name=".My.MyService" />
+    </application>
+
+</manifest>

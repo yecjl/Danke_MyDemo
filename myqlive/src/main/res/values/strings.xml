@@ -1,0 +1,406 @@
+<resources>
+    <string name="app_name">myqlive</string>
+    <string name="app_name_danke">咔咔硕Danke</string>
+    <string name="splash_note">指尖上的导购，心里头的满足</string>
+    <string name="copyright">咔咔硕 Copyright 2013-2016</string>
+    <string name="jingxuan">精选</string>
+    <string name="madian">码店</string>
+    <string name="guanzhu_title">关注</string>
+    <string name="shoppingcart">购物车</string>
+    <string name="me">我</string>
+    <string name="jingxuanTitle">本周精选</string>
+    <string name="madianTitle">关注的码店</string>
+    <string name="guanzhuTitle">我的关注</string>
+    <string name="jifenTitle">我的积分</string>
+    <string name="bobaListTitle">播吧主页</string>
+    <string name="bobaDetailTitle">贴子详情</string>
+    <string name="boba_publish">发布贴子</string>
+    <string name="boba_publish_rely">回复贴子</string>
+    <string name="customerProtocol">用户协议</string>
+    <string name="afterSale">申请售后</string>
+    <string name="afterSaleDetail">售后详情</string>
+    <string name="feedback">意见反馈</string>
+    <string name="cart">购物车</string>
+    <string name="myLucky">我的手气</string>
+    <string name="rmb">￥</string>
+    <string name="shop_title">购物车(%s)</string>
+    <string name="count_money">合计：￥%s</string>
+    <string name="count_goods">去结算（%s）</string>
+    <string name="count_delete">删除（%s）</string>
+    <string name="load">正在加载...</string>
+    <string name="ali">支付宝支付</string>
+    <string name="union">银联支付</string>
+    <string name="need">需支付</string>
+    <string name="all_comment">全部评价</string>
+    <string name="guanzhu">+关注</string>
+    <string name="cancel">取消关注</string>
+    <string name="commentsVendor">卖家回复：</string>
+    <string name="commentsAdded">追加评价：</string>
+    <string name="commentsVendorAdd">卖家追加回复：</string>
+    <string name="edit">编辑</string>
+    <string name="complete">完成</string>
+    <string name="login">登录</string>
+    <string name="commit">提交</string>
+    <string name="mymsg">我的消息</string>
+    <string name="jilu">扫码记录</string>
+    <string name="jifenDetail">积分明细</string>
+    <string name="jiangping">我的抽奖</string>
+    <string name="balance">账户余额</string>
+    <string name="fukuan">待付款</string>
+    <string name="fahuo">待发货</string>
+    <string name="shouhuo">待收货</string>
+    <string name="pingjia">待评价</string>
+    <string name="shouhou">售后</string>
+    <string name="myHongbao">我的红包</string>
+    <string name="order_zxing">二维码</string>
+    <string name="myYouhuiquan">优惠券</string>
+    <string name="no_username">还没有账号</string>
+    <string name="register"> 立即注册</string>
+    <string name="forget">忘记密码？</string>
+    <string name="have_username">已经是咔咔硕用户</string>
+    <string name="go_login">去登录</string>
+    <string name="agree">注册表示您已阅读并同意</string>
+    <string name="agreement">咔咔硕使用协议</string>
+    <string name="video">视频管理</string>
+    <string name="use_rule">红包使用规则</string>
+    <string name="rebate_use_rule">优惠券使用规则</string>
+    <string name="dengyu">100积分=1.00元</string>
+    <string name="setting">设置</string>
+    <string name="exit">退出登录</string>
+    <string name="changepassword">修改密码</string>
+    <string name="changeUsername">修改昵称</string>
+    <string name="current">当前密码</string>
+    <string name="newPass">新密码</string>
+    <string name="queren">确认新密码</string>
+    <string name="myorder">我的订单</string>
+    <string name="personal_info">个人资料</string>
+    <string name="all">全部</string>
+    <string name="order_detail">订单详情</string>
+    <string name="order_list">订单列表</string>
+    <string name="order_aftersafe">售后订单</string>
+    <string name="map_mode">地图模式</string>
+    <string name="map_recommend">推荐信息</string>
+    <string name="scan_text">将二维码放入框内，即可自动扫描</string>
+    <string name="edit_info">编辑个人资料</string>
+    <string name="kks_kefu">咔咔硕客服</string>
+    <string name="kks_phone_tishi">是否拨打客服 </string>
+    <string name="kks_phone">400-690-0571</string>
+    <string name="transfer">提现</string>
+    <string name="transfer_amount">输入需转账金额</string>
+    <string name="account_type">支付宝或银行卡</string>
+    <string name="real_name">账户真实姓名：</string>
+    <string name="p_real_name">请输入账户真实姓名</string>
+    <string name="type">账户类型：</string>
+    <string name="emal">联系邮箱：</string>
+    <string name="p_emal">请输入联系邮箱</string>
+    <string name="remark">备注信息：</string>
+    <string name="p_remark">请输入备注信息</string>
+    <string name="alipay">支付宝账号：</string>
+    <string name="p_alipay">请输入支付宝账号</string>
+    <string name="pay_fee">付费直播</string>
+    <string name="nothings">吼吼，什么都没有~</string>
+    <string name="noLucky">暂时还没有手气~</string>
+    <string name="noOrder">暂无记录</string>
+    <string name="noYouhuiquan">暂时还没有优惠券~</string>
+    <string name="noYouhuiquanUsed">暂时还没有优惠券过期~</string>
+    <string name="noJifenHistory">暂时还没有积分历史~</string>
+    <string name="noDowning">暂时还没有下载~</string>
+    <string name="noStoreInfo">暂时没有门店信息哦~</string>
+    <string name="noDowned">空空如也~</string>
+    <string name="select_type">选择支付方式</string>
+    <string name="publishcomment">发表评价</string>
+    <string name="applyforaftersales">申请售后</string>
+    <string name="find_password">找回密码</string>
+    <string name="comment_hint">您的评价对他人有很大的帮助呢~</string>
+    <string name="after_hint">输入退换货原因</string>
+    <string name="publish_boba_title_hint">输入标贴，最多20个字</string>
+    <string name="publish_boba_content_hint">贴子内容</string>
+    <string name="publish_rely_boba_content_hint">回复内容</string>
+    <string name="publish_fedback_content_hint">输入您的建议</string>
+    <string name="address_manager">管理收货地址</string>
+    <string name="insert_manager">新增地址</string>
+    <string name="insert">新增</string>
+    <string name="address_name">收货人姓名</string>
+    <string name="address_phone">联系方式</string>
+    <string name="address_city">所在地区</string>
+    <string name="address_code">邮编</string>
+    <string name="address_street">街道</string>
+    <string name="address_detail">详细地址</string>
+    <string name="address_default">设为默认地址</string>
+    <string name="save_use">保存并使用</string>
+    <string name="save">保存</string>
+    <string name="edit_phone">请输入您便于接受短信的手机号</string>
+    <string name="order_liuyan">选填，可填写您的特殊要求</string>
+    <string name="order_tijiao">提交订单</string>
+    <string name="rebate">优惠券</string>
+    <string name="my_pay">我的支付</string>
+    <string name="not_use_rebate">不使用优惠券</string>
+    <string name="candikou">可抵扣￥%s元</string>
+    <string name="orderName">咔咔硕商品购买</string>
+    <string name="recommend_product_title">关联商品</string>
+    <string name="coupon_get_title">无门槛使用</string>
+    <string name="available">已失效</string>
+
+    <string name="SD_error">SD卡不可用，请检查SD卡状态</string>
+    <string name="retry_download">下载失败，请重试</string>
+    <string name="downloading">正在下载</string>
+    <string name="clean">清空</string>
+    <string name="no_support">暂不支持x86型号的手机</string>
+
+    <string name="double_click_exit">再按一次退出咔咔硕</string>
+    <string-array name="download_manager">
+        <item>正在下载</item>
+        <item>已经完成</item>
+    </string-array>
+    <string-array name="hongbao_tab_title">
+        <item>商品红包</item>
+        <item>店铺红包</item>
+    </string-array>
+    <string-array name="youhuijuan_tab_title">
+        <item>可使用</item>
+        <item>已过期</item>
+    </string-array>
+    <string-array name="guanzhu_tab_title">
+        <item>码店</item>
+        <item>播吧</item>
+    </string-array>
+    <string-array name="shouhouType">
+        <item>我要退货</item>
+        <item>我要换货</item>
+    </string-array>
+    <string-array name="shouhuoType">
+        <item>已收到货</item>
+        <item>未收到货</item>
+    </string-array>
+    <string-array name="shouhuoType2">
+        <item>已收到货</item>
+    </string-array>
+    <string-array name="tuihuoType">
+        <item>质量问题（退运费）</item>
+        <item>非质量问题（不退运费）</item>
+    </string-array>
+    <string-array name="tuihuoTypeShow">
+        <item>质量问题</item>
+        <item>非质量问题</item>
+    </string-array>
+    <integer-array name="point_item">
+        <item>500</item>
+        <item>1000</item>
+        <item>3000</item>
+        <item>4900</item>
+        <item>9900</item>
+        <item>19900</item>
+    </integer-array>
+
+    <string-array name="point_boba_item_title">
+        <item>666</item>
+        <item>棒棒糖</item>
+        <item>萌萌哒</item>
+        <item>打赏</item>
+        <item>鲜花</item>
+        <item>幸运星</item>
+        <item>上头条</item>
+        <item>金话筒</item>
+        <item>生日蛋糕</item>
+        <item>抱抱</item>
+        <item>谢谢</item>
+        <item>红玫瑰</item>
+        <item>DUANG</item>
+        <item>气球</item>
+        <item>香吻</item>
+        <item>蓝色妖姬</item>
+        <item>红包雨</item>
+        <item>烟花</item>
+        <item>流星雨</item>
+        <item>香槟</item>
+    </string-array>
+    <integer-array name="point_boba_item_num">
+        <item>50</item>
+        <item>50</item>
+        <item>100</item>
+        <item>100</item>
+        <item>50</item>
+        <item>50</item>
+        <item>100</item>
+        <item>100</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+    </integer-array>
+    <array name="point_boba_item_image">
+        <item>@mipmap/gift01_666</item>
+        <item>@mipmap/gift02_flower</item>
+        <item>@mipmap/gift03_lollipop</item>
+        <item>@mipmap/gift04_luckystar</item>
+        <item>@mipmap/gift05_mmda</item>
+        <item>@mipmap/gift06_headline</item>
+        <item>@mipmap/gift07_reward</item>
+        <item>@mipmap/gift08_goldmicrophone</item>
+        <item>@mipmap/gift09_cake</item>
+        <item>@mipmap/gift10_duang</item>
+        <item>@mipmap/gift11_hug</item>
+        <item>@mipmap/gift12_balloon</item>
+        <item>@mipmap/gift13_thanks</item>
+        <item>@mipmap/gift14_kiss</item>
+        <item>@mipmap/gift15_redrose</item>
+        <item>@mipmap/gift16_bluerose</item>
+        <item>@mipmap/gift17_hongbao</item>
+        <item>@mipmap/gift18_starshower</item>
+        <item>@mipmap/gift19_fireworks</item>
+        <item>@mipmap/gift20_champagne</item>
+    </array>
+
+    <integer-array name="select_gift_num">
+        <item>520</item>
+        <item>99</item>
+        <item>88</item>
+        <item>66</item>
+        <item>30</item>
+        <item>10</item>
+        <item>5</item>
+        <item>1</item>
+    </integer-array>
+    <string-array name="select_gift_title">
+        <item>我爱你</item>
+        <item>天长地久</item>
+        <item>抱抱</item>
+        <item>一切顺利</item>
+        <item>想你</item>
+        <item>十全十美</item>
+        <item>无怨无悔</item>
+        <item>一心一意</item>
+    </string-array>
+
+    <!--网络框架错误提示信息-->
+    <string name="authFailureError">请求认证失败</string>
+    <string name="networkError">网络错误</string>
+    <string name="parseError">数据解析失败</string>
+    <string name="serverError">服务端错误</string>
+    <string name="timeoutError">请求超时</string>
+    <string name="noConnectionError">没有网络链接</string>
+    <string name="redirectError">重定向错误</string>
+
+    <!--错误提示-->
+    <string name="user_pwdError">用户名密码错误</string>
+    <string name="refreshTokenError">认证信息过期，请重新登录</string>
+    <string name="userInfo_error_msg">请用买家账号登录</string>
+
+    <string name="jiangping_title">我的抽奖</string>
+    <string name="jilu_nodata">暂无记录</string>
+    <string name="yilingqu2">领取</string>
+    <string name="yilingqu">已领取</string>
+    <string name="no_yilingqu">立即领取</string>
+    <string name="no_yilingqu2">领取红包</string>
+    <string name="selectShouhouType">请先选择售后类型</string>
+    <string name="order_reabte_error">此优惠券暂不可用！</string>
+
+    <string-array name="rebate_title">
+        <item>平台优惠券</item>
+        <item>店铺优惠券</item>
+        <item>类目优惠券</item>
+        <item>商品优惠券</item>
+    </string-array>
+
+    <!--分享内容-->
+    <string name="share_rebate_title">领取优惠券</string>
+    <string name="share_rebate_desc">咔咔硕送您一张优惠券，请及时领取</string>
+
+    <!--对话框提示信息-->
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="rebate_receive_title">领取成功</string>
+    <string name="rebate_receive_desc">您已成功领取%s元优惠券</string>
+    <string name="rebate_received_title">不能领取更多了</string>
+    <string name="rebate_received_desc">有福同享情更真，快去跟朋友们分享吧</string>
+    <string name="order_cancel_title">提示</string>
+    <string name="order_cancel_desc">取消后无法恢复，是否确定?</string>
+    <string name="order_cancel_desc2">退款后无法恢复，是否确定?</string>
+    <string name="order_delete_desc">删除后无法恢复，是否确定?</string>
+    <string name="order_use_desc">此步谨慎操作，如果选择确定，则代表您已经收到货物?</string>
+    <string name="zhibo_pay_title">观看直播</string>
+    <string name="zhibo_pay_desc">观看该直播需要支付%s元</string>
+    <string name="zhibo_pay_ok">立即支付</string>
+    <string name="Qimanet_pay_title">观看多媒体</string>
+    <string name="Qimanet_pay_desc">观看该多媒体需要支付%s元</string>
+    <string name="order_use_title">份数</string>
+    <string name="order_use_desc_usc">请输入验证份数</string>
+    <string name="conn_kefu_title">联系客服</string>
+    <string name="conn_kefu_desc">是否拨打</string>
+    <string name="conn_store_info_title">门店电话</string>
+    <string name="zengsong_gift_title">赠送礼物</string>
+    <string name="zengsong_gift_desc">您的积分余额不足，请充值后再赠送</string>
+    <string name="zengsong_gift_ok">充值</string>
+    <string name="live_error_license">直播间人数已满！</string>
+    <string name="map_install_title">提示</string>
+    <string name="map_install_desc">您尚未安装百度地图app或app版本过低</string>
+
+    <!--订单状态-->
+    <string name="order_cancel">取消订单</string>
+    <string name="order_cancel2">退款</string>
+    <string name="order_canceling">订单取消中...</string>
+    <string name="order_pay">立即付款</string>
+    <string name="order_use">确认消费</string>
+    <string name="order_shouhuo">确认收货</string>
+    <string name="order_apply_shouhou">申请售后</string>
+    <string name="order_after_safe">售后进程</string>
+    <string name="order_create_zxing">二维码</string>
+    <string name="order_delete">删除订单</string>
+    <string name="order_deleteing">订单删除中...</string>
+    <string name="order_addto_evaluate">追加评价</string>
+    <string name="order_evaluate">评价</string>
+
+    <string name="item_boba_atten_post">个贴子</string>
+    <string name="item_boba_atten_attention">人关注</string>
+    <string name="fatie">发贴</string>
+    <string name="huifu">回复</string>
+    <string name="huifu_louzhu">回复楼主</string>
+    <string name="zhiboing">直播中</string>
+    <string name="zhibo_end">已结束</string>
+    <string name="zhibo_start">未开始</string>
+    <string name="tuijian_title">楼主推荐宝贝</string>
+    <string name="huite_title">大家的回贴</string>
+    <string name="cellphone_invalid">请输入正确的电话号码</string>
+
+    <string name="afterSafe_wait">等待卖家处理</string>
+    <string name="afterSafe_logisticsTitle">卖家已同意您的退货申请，请填写退货信息</string>
+    <string name="afterSafe_logisticsTitle3">卖家已同意您的换货申请，请填写换货信息</string>
+    <string name="afterSafe_logisticsTitle2">平台已通过您的维权申请，请填写退货信息</string>
+    <string name="afterSafe_logisticsTitle4">平台已通过您的维权申请，请填写换货信息</string>
+    <string name="afterSafe_wait2">等待卖家确认收货</string>
+    <string name="afterSafe_wait3">卖家已确认收货，待卖家发货</string>
+    <string name="afterSafe_wait4">卖家已确认收货</string>
+    <string name="afterSafe_wait5">等待平台处理</string>
+    <string name="afterSafe_wait6">平台已拒绝您的维权申请</string>
+    <string name="afterSafe_wait7">售后已完成</string>
+    <string name="afterSafe_refuse">卖家拒绝售后</string>
+    <string name="afterSafe_refuse_desc">拒绝原因：</string>
+    <string name="afterSafe_weiquan">申请维权</string>
+    <string name="afterSafe_vendor_fahuo">卖家已发货，请查看物流信息</string>
+    <string name="afterSafe_kks_access">平台已通过您的维权申请</string>
+    <string name="afterSafe_kks_conn">请联系维权客服</string>
+
+    <string name="cancelOK">操作成功</string>
+    <string name="deleteOK">删除订单成功</string>
+    <string name="useOK">验证成功</string>
+    <string name="shouhuoOK">确认收货成功</string>
+    <string name="keep_drag">继续拖动，查看商品详情</string>
+
+    <!--我的支付-->
+    <string name="pay_success_title_raff">恭喜您获得一次抽奖机会，去试试手气吧！</string>
+    <string name="pay_success_title_live">精彩直播还在等着您，立即前往！</string>
+    <string name="pay_success_btn_raff">立即抽奖</string>
+    <string name="pay_success_btn_live">返回直播</string>
+    <string name="pay_success_btn_order">查看订单</string>
+
+    <!--腾讯云 im-->
+    <string name="tip_force_offline">您的帐号已在其它地方登陆</string>
+</resources>

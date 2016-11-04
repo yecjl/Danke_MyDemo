@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="title_box_pressed">#171f1f</color>
+    <color name="wx_title_bg">#22292c</color>
+    <color name="white">#ffffffff</color>
+    <color name="tempColor">#e3e3e3</color>
+    <color name="tsName">#7081a5</color>
+    <color name="pcName">#353535</color>
+    <color name="f9C9C9C">#9C9C9C</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray_ef">#EFEFEF</color>
+</resources>

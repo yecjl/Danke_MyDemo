@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_replyBox"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fenge"
+        android:background="@color/cart_null_back" />
+
+    <EditText
+        android:id="@+id/et_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@+id/ll_rely"
+        android:background="@drawable/shape_graykuang"
+        android:gravity="center_vertical"
+        android:padding="6dp"
+        android:textColor="@color/titleBlack"
+        android:textSize="@dimen/size12" />
+
+    <LinearLayout
+        android:id="@+id/ll_rely"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <Button
+            android:id="@+id/btn_reply"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/shape_hongdi"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size14" />
+    </LinearLayout>
+</RelativeLayout>

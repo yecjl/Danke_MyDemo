@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--ViewPager指示器的属性-->
+    <declare-styleable name="ViewPagerIndicator">
+        <!--有几个标题-->
+        <attr name="item_count" format="integer"></attr>
+        <!--字体大小-->
+        <attr name="text_size" format="integer"></attr>
+    </declare-styleable>
+
+    <!--虚线-->
+    <declare-styleable name="dashedline">
+        <!--虚线的颜色-->
+        <attr name="lineColor" format="color" />
+    </declare-styleable >
+</resources>

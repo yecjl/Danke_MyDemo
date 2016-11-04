@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="10dip" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="260dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/albumbg" />
+
+    <ImageView
+        android:id="@+id/userheader"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/image"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="-45dp"
+        android:background="@mipmap/aq8"
+        android:src="@mipmap/a_boy" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/userheader"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dip"
+        android:layout_toLeftOf="@id/userheader"
+        android:text="."
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/signTv" android:visibility="gone" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/userheader"
+        android:layout_below="@id/userheader"
+        android:textSize="12dip" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.study.myqlive"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // 打包指定cpu架构
+    splits {
+        abi {
+            enable true // 启用ABI拆分机制
+            reset() // 重置ABI列表为只包含一个空字符串（这可以实现，在与include一起使用来可以表示要使用哪一个ABI，而不是要忽略哪一些ABI）
+            include 'armeabi'/*, 'armeabi-v7a', 'arm64-v8a'*/ //select ABIs to build APKs for 指明要包含哪些ABI
+            universalApk false //generate an additional APK that contains all the ABIs 指示是否打包一个通用版本（包含所有的ABI）。默认值为 false。
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    // 导入腾讯云直播SDK jar
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.makeramen:roundedimageview:2.2.1'
+    compile project(':myframework')
+    compile files('libs/bugly_1.3.0_imsdk_release.jar')
+    compile files('libs/imsdk.jar')
+    compile files('libs/mobilepb.jar')
+    compile files('libs/qalsdk.jar')
+    compile files('libs/qavsdk.jar')
+    compile files('libs/soload.jar')
+    compile files('libs/tls_sdk.jar')
+    compile files('libs/wup-1.0.0-SNAPSHOT.jar')
+    compile files('libs/beacon_1.5.3_imsdk_release.jar')
+}

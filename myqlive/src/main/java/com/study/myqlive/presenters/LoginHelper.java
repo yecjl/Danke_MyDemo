@@ -44,14 +44,14 @@ public class LoginHelper extends Presenter {
      */
     public void imLogin(final String identify, final String userSig) {
         TIMUser user = new TIMUser();
-        user.setAccountType(String.valueOf(Constant.ACCOUNT_TYPE));
-        user.setAppIdAt3rd(String.valueOf(Constant.SDK_APPID));
-        user.setIdentifier(identify);
+        user.setAccountType("8177");
+        user.setAppIdAt3rd("1400017320");
+        user.setIdentifier("kakasure|主播");
         //发起登录请求
         TIMManager.getInstance().login(
-                Constant.SDK_APPID,
+                1400017320,
                 user,
-                userSig,                    //用户帐号签名，由私钥加密获得，具体请参考文档
+                "eJxlz9FKwzAUBuD7PkXo7USTtDWr4EWd62yZU*w6xJuQtpnGbl2WZmVDfQnfw3vB1xGfwxEGBjy338-5z3lxAADudJwds7JcbRpN9U5yF5wBF7pHfyilqCjT1FPVP*RbKRSnbK65MuhBm0XFGy3m4oA1q1m7Ufz1*-Pr5-3DCrZVTU2RySEfQoiIh*1drXg0eD3MB0k88WFPr-MsRvfFA5yxwe2O*JMQp3G6GLFt8bQcXWTjEhVXkRhGMg8WvUSzmxbDriAx6vwqYtks5f7dNOHytIwuO*Gtn0-guVWpxZIfDiJ9EoRh37O046oVq8YEMEQBwvvn9*M6b84vnE9gwA__",                    //用户帐号签名，由私钥加密获得，具体请参考文档
                 new TIMCallBack() {
                     @Override
                     public void onError(int i, String s) {

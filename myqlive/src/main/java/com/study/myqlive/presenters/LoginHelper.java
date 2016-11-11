@@ -46,12 +46,12 @@ public class LoginHelper extends Presenter {
         TIMUser user = new TIMUser();
         user.setAccountType("8177");
         user.setAppIdAt3rd("1400017320");
-        user.setIdentifier("kakasure|主播");
+        user.setIdentifier(identify);
         //发起登录请求
         TIMManager.getInstance().login(
                 1400017320,
                 user,
-                "eJxlz9FKwzAUBuD7PkXo7USTtDWr4EWd62yZU*w6xJuQtpnGbl2WZmVDfQnfw3vB1xGfwxEGBjy338-5z3lxAADudJwds7JcbRpN9U5yF5wBF7pHfyilqCjT1FPVP*RbKRSnbK65MuhBm0XFGy3m4oA1q1m7Ufz1*-Pr5-3DCrZVTU2RySEfQoiIh*1drXg0eD3MB0k88WFPr-MsRvfFA5yxwe2O*JMQp3G6GLFt8bQcXWTjEhVXkRhGMg8WvUSzmxbDriAx6vwqYtks5f7dNOHytIwuO*Gtn0-guVWpxZIfDiJ9EoRh37O046oVq8YEMEQBwvvn9*M6b84vnE9gwA__",                    //用户帐号签名，由私钥加密获得，具体请参考文档
+                userSig,                    //用户帐号签名，由私钥加密获得，具体请参考文档
                 new TIMCallBack() {
                     @Override
                     public void onError(int i, String s) {

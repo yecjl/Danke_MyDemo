@@ -61,7 +61,7 @@ public class MainActivity extends BaseFragmentActivity implements View.OnClickLi
                 break;
             case R.id.btn_zhubo_im: // 主播 IM
                 mLoginHelper = new LoginHelper(this, MainActivity.this);
-                mLoginHelper.imLogin("kakasure", "eJxljsFOg0AURfd8BWFtzMAAU0y6QIvFWJoixXTckCkM5JUA4zCoxPjvKjYpiW97zr33fWq6rhv7TXLN8rwbWpWpUXBDv9ENZFxdoBBQZExlWBb-IP8QIHnGSsXlBE3HcSyE5g4UvFVQwtmoWc36QfKZ0Rd1Ns38Vdg-eZNga17SQzXBKEjvHgJ6cqvch9Vx26*60Per9THc7jzaPJpdFR5cQES4*12xjn0IfGmnaQzeuHmu3uuGvBxwImiU0Ngb49vw-sTK6PWJjkPs1cvZpIKGnx8iC8teYERm9I3LHrp2EixkOqaF0e8Z2pf2DXypXk0_");
+                mLoginHelper.imLogin("9896587163619414027|主播", "eJxlzk9Og0AYBfA9pyBsa2Rm*DeYuJhQbKotpUil6YYgDO1AOkUYCY16Ce-h3sTrGM9hQ5pI4vr33ve*F0mWZSWc3V8maXp45iIWx4oq8pWsAOXiD6uKZXEiYq3O-iHtKlbTOMkFrXvUwJBZRrlgOTujjW3TwBY0NRPaOtQBsl6-P79*3j8GnSYr436zr5xCAEBLQ8OzDdv2OHdXznScjij3wg0y2hu-yIPKbbxl4O1K9bZgWzuYwsdotJzsnnhEmEuKvVP73UOGiDdz1lk3nm88qB6xf*eTFi2i1XrCVULUsEyvB5OC7en5IQtjXTexOdCW1g078D6AADQgAvbpb6BIb9IvGRdiPg__");
                 break;
         }
     }
@@ -77,9 +77,9 @@ public class MainActivity extends BaseFragmentActivity implements View.OnClickLi
     public void loginSucc() {
         MyToast.showBottom("登录成功");
         CurLiveInfo.setTitle("danke 测试");
-        CurLiveInfo.setHostID("kakasure");
-        CurLiveInfo.setGroupNum("@TGS#a6TF4BHEC");
-        LiveQIMPublicActivity.start(this, "rtmp://4894.livepush.myqcloud.com/live/4894_20d265e4976611e69776e435c87f075e?bizid=4894");
+        CurLiveInfo.setHostID("9896587163619414027|主播");
+        CurLiveInfo.setGroupNum("@TGS#aOHYKWHEQ");
+        LiveQIMPublicActivity.start(this, "rtmp://4894.livepush.myqcloud.com/live/4894_6f3c29bba70b11e69776e435c87f075e?bizid=4894");
     }
 
     @Override

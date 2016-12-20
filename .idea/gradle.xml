@@ -10,9 +10,11 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/bluetooth" />
+            <option value="$PROJECT_DIR$/cameracutter" />
             <option value="$PROJECT_DIR$/checkupdateservice" />
             <option value="$PROJECT_DIR$/emotionkeyboard" />
             <option value="$PROJECT_DIR$/friendcircledemo" />
+            <option value="$PROJECT_DIR$/httpsdemo" />
             <option value="$PROJECT_DIR$/marqueetext" />
             <option value="$PROJECT_DIR$/mydispatchevent" />
             <option value="$PROJECT_DIR$/myframework" />
@@ -20,9 +22,11 @@
             <option value="$PROJECT_DIR$/mysticky" />
             <option value="$PROJECT_DIR$/printscreen" />
             <option value="$PROJECT_DIR$/refreshhead" />
+            <option value="$PROJECT_DIR$/scheduledtask" />
             <option value="$PROJECT_DIR$/softinputdemo" />
             <option value="$PROJECT_DIR$/stickyheader" />
             <option value="$PROJECT_DIR$/stickylib" />
+            <option value="$PROJECT_DIR$/wifidemo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

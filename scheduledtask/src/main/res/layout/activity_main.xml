@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.study.scheduledtask.MainActivity">
+
+    <Button
+        android:id="@+id/btn_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="timer" />
+
+    <Button
+        android:id="@+id/btn_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="schedule" />
+
+    <Button
+        android:id="@+id/btn_schedule_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="schedule_close" />
+
+    <Button
+        android:id="@+id/btn_handler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="handler" />
+
+    <Button
+        android:id="@+id/btn_schedule_single"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="延迟10秒执行一次，只执行一次" />
+
+    <Button
+        android:id="@+id/btn_schedule_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="每过一秒执行一次，执行5秒" />
+
+    <Button
+        android:id="@+id/btn_schedule_recycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="每2秒执行一次，无限执行" />
+</LinearLayout>

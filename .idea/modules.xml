@@ -5,9 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/Danke_MyDemo.iml" filepath="$PROJECT_DIR$/Danke_MyDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/bluetooth/bluetooth.iml" filepath="$PROJECT_DIR$/bluetooth/bluetooth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cameracutter/cameracutter.iml" filepath="$PROJECT_DIR$/cameracutter/cameracutter.iml" />
       <module fileurl="file://$PROJECT_DIR$/checkupdateservice/checkupdateservice.iml" filepath="$PROJECT_DIR$/checkupdateservice/checkupdateservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/emotionkeyboard/emotionkeyboard.iml" filepath="$PROJECT_DIR$/emotionkeyboard/emotionkeyboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/friendcircledemo/friendcircledemo.iml" filepath="$PROJECT_DIR$/friendcircledemo/friendcircledemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httpsdemo/httpsdemo.iml" filepath="$PROJECT_DIR$/httpsdemo/httpsdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/marqueetext/marqueetext.iml" filepath="$PROJECT_DIR$/marqueetext/marqueetext.iml" />
       <module fileurl="file://$PROJECT_DIR$/mydispatchevent/mydispatchevent.iml" filepath="$PROJECT_DIR$/mydispatchevent/mydispatchevent.iml" />
       <module fileurl="file://$PROJECT_DIR$/myframework/myframework.iml" filepath="$PROJECT_DIR$/myframework/myframework.iml" />
@@ -15,9 +17,11 @@
       <module fileurl="file://$PROJECT_DIR$/mysticky/mysticky.iml" filepath="$PROJECT_DIR$/mysticky/mysticky.iml" />
       <module fileurl="file://$PROJECT_DIR$/printscreen/printscreen.iml" filepath="$PROJECT_DIR$/printscreen/printscreen.iml" />
       <module fileurl="file://$PROJECT_DIR$/refreshhead/refreshhead.iml" filepath="$PROJECT_DIR$/refreshhead/refreshhead.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scheduledtask/scheduledtask.iml" filepath="$PROJECT_DIR$/scheduledtask/scheduledtask.iml" />
       <module fileurl="file://$PROJECT_DIR$/softinputdemo/softinputdemo.iml" filepath="$PROJECT_DIR$/softinputdemo/softinputdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/stickyheader/stickyheader.iml" filepath="$PROJECT_DIR$/stickyheader/stickyheader.iml" />
       <module fileurl="file://$PROJECT_DIR$/stickylib/stickylib.iml" filepath="$PROJECT_DIR$/stickylib/stickylib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wifidemo/wifidemo.iml" filepath="$PROJECT_DIR$/wifidemo/wifidemo.iml" />
     </modules>
   </component>
 </project>

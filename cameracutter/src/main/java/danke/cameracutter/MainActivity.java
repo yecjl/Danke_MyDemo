@@ -1,5 +1,6 @@
 package danke.cameracutter;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -13,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -20,10 +22,13 @@ import java.io.FileNotFoundException;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import permissions.dispatcher.NeedsPermission;
+import permissions.dispatcher.RuntimePermissions;
 
+@RuntimePermissions
 public class MainActivity extends AppCompatActivity {
 
-    private static final int CUT_OK = 0x1006;
+    private static final int PHOTO_REQUEST_CUT = 0x1006;
     private static final int GET_IMAGE_VIA_GALLERY = 0x1004;
     @Bind(R.id.btn_open)
     Button btnOpen;
@@ -31,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
     ImageView ivShow;
     public static final String IMAGE_PATH = Environment.getExternalStorageDirectory().getAbsolutePath()
             + File.separator + "kakasure" + File.separator + "image" + File.separator;
-    private Uri uri;
+    private Uri imageUri;
+    private Uri newUri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,122 +48,67 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_open)
     public void openCamera(View view) {
-        Intent albumIntent = new Intent(Intent.ACTION_PICK);//打开系统的相册
-        albumIntent.setType("image/*");
-        startActivityForResult(albumIntent, GET_IMAGE_VIA_GALLERY);
+        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);//打开系统的相册
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.setType("image/*");
+        startActivityForResult(intent, GET_IMAGE_VIA_GALLERY);
     }
 
+    @NeedsPermission(Manifest.permission.MANAGE_DOCUMENTS)
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (data == null) {
-            return;
-        }
-
         switch (requestCode) {
             case GET_IMAGE_VIA_GALLERY: //从相册选取图片
-                uri = data.getData();
-//                getClipPhotoByPickPicture(uri);
 
-                //从相册选取头像
-                Bitmap bitmapfromgallery = getImageBitmap(this, data);
-                String uriString = MediaStore.Images.Media.insertImage(getContentResolver(), bitmapfromgallery, null, null);
-                if (uriString != null && !"".equals(uriString)) {
-                    cropImage(Uri.parse(uriString), 300, 300, CUT_OK);
+                if (data == null) {
+                    return;
                 }
-                break;
-            case CUT_OK:
-                //接收裁剪好的图片信息并保存到本地文件夹
-//                if (uri == null) {
-//                    break;
-//                }
-//                Bitmap cropBitmap = getBitmapFromUri(uri, this);
-//                if (cropBitmap != null) {
-//                    ivShow.setImageBitmap(cropBitmap);
-//                }
 
+                imageUri = data.getData();
 
-                Bitmap photo = null;
-                try {
-
-                    if (Build.VERSION.SDK_INT == Build.VERSION_CODES.M && data.getData() != null) {
-                        photo = BitmapFactory.decodeStream(getContentResolver().openInputStream(data.getData()));
-
+                if (resultCode == RESULT_OK) {
+                    //从相册选取成功后，需要从Uri中拿出图片的绝对路径，再调用剪切
+                    newUri = Uri.parse("file:///" + CropUtils.getPath(this, data.getData()));
+                    if (newUri != null) {
+                        CropUtils.cropImageUri(this, newUri, imageUri, 400, 400, PHOTO_REQUEST_CUT);
                     } else {
-                        // in android version lower than M your method must work
-                        photo = data.getParcelableExtra("data");
+                        Toast.makeText(this, "没有得到相册图片", Toast.LENGTH_SHORT).show();
                     }
-
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
+                } else if (resultCode == RESULT_CANCELED) {
+                    Toast.makeText(this, "从相册选取取消", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(this, "从相册选取失败", Toast.LENGTH_SHORT).show();
                 }
-                ivShow.setImageBitmap(photo);
+
+                break;
+            case PHOTO_REQUEST_CUT:
+                //接收裁剪好的图片信息并保存到本地文件夹
+                if (resultCode == RESULT_OK) {
+                    Bitmap bitmap = decodeUriAsBitmap(this, imageUri);
+                    ivShow.setImageBitmap(bitmap);
+                } else if (resultCode == RESULT_CANCELED) {
+                    Toast.makeText(this, "取消剪切图片", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(this, "剪切失败", Toast.LENGTH_SHORT).show();
+                }
                 break;
         }
     }
 
-    /**
-     * 取得返回的照片信息
-     *
-     * @param uri 传进返回数据的uri
-     */
-    private void getClipPhotoByPickPicture(Uri uri) {
-
-        if (uri == null) {
-            return;
-
-        } else {
-            Intent intent = new Intent("com.android.camera.action.CROP");
-            intent.setDataAndType(uri, "image/*");
-            // 下面这个crop=true是设置在开启的Intent中设置显示的VIEW可裁剪
-            intent.putExtra("crop", "true");
-            intent.putExtra("aspectX", 1); // aspectX是宽高的比例，这里设置的是正方形（长宽比为1:1）// 输出是X方向的比例
-            intent.putExtra("aspectY", 1);
-            intent.putExtra("outputX", 400); // outputX outputY 是裁剪图片宽高
-            intent.putExtra("outputY", 400); // 不知怎么了，我设置不能设太大，<640
-            intent.putExtra("scale", true); // 去黑边
-            intent.putExtra("scaleUpIfNeeded", true); // 去黑边
-            intent.putExtra("return-data", false); // 设置为不返回数据
-            intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG.toString());
-            intent.putExtra("noFaceDetection", true);
-            intent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
-            startActivityForResult(intent, CUT_OK);
+    //从Uri中获取Bitmap格式的图片
+    private static Bitmap decodeUriAsBitmap(Context context, Uri uri) {
+        Bitmap bitmap;
+        try {
+            bitmap = BitmapFactory.decodeStream(context.getContentResolver().openInputStream(uri));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return null;
         }
+        return bitmap;
     }
 
-    /**
-     * 截取图片
-     *
-     * @param uri
-     * @param outputX
-     * @param outputY
-     * @param requestCode
-     */
-    public void cropImage(Uri uri, int outputX, int outputY, int requestCode) {
-        if (uri == null) {
-            return;
-        }
-
-        //裁剪图片意图
-        Intent intent = new Intent("com.android.camera.action.CROP");
-        intent.setDataAndType(uri, "image/*");
-        // 下面这个crop=true是设置在开启的Intent中设置显示的VIEW可裁剪
-        intent.putExtra("crop", "true");
-        //裁剪框的比例，1：1  // aspectX是宽高的比例，这里设置的是正方形（长宽比为1:1）// 输出是X方向的比例
-        intent.putExtra("aspectX", 1);
-        intent.putExtra("aspectY", 1);
-        //裁剪后输出图片的尺寸大小
-        intent.putExtra("outputX", outputX);  // outputX outputY 是裁剪图片宽高
-        intent.putExtra("outputY", outputY);
-        //图片格式
-        intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG.toString());
-        intent.putExtra("noFaceDetection", true);// 取消人脸识别
-        intent.putExtra("scale", true); // 去黑边
-        intent.putExtra("scaleUpIfNeeded", true); // 去黑边
-        intent.putExtra("return-data", true);  // 设置为不返回数据
-        startActivityForResult(intent, requestCode);
-    }
 
     public static Bitmap getBitmapFromUri(Uri uri, Context mContext) {
         try {

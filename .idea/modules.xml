@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Danke_MyDemo.iml" filepath="$PROJECT_DIR$/Danke_MyDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/bluetooth/bluetooth.iml" filepath="$PROJECT_DIR$/bluetooth/bluetooth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camera/camera.iml" filepath="$PROJECT_DIR$/camera/camera.iml" />
       <module fileurl="file://$PROJECT_DIR$/cameracutter/cameracutter.iml" filepath="$PROJECT_DIR$/cameracutter/cameracutter.iml" />
       <module fileurl="file://$PROJECT_DIR$/checkupdateservice/checkupdateservice.iml" filepath="$PROJECT_DIR$/checkupdateservice/checkupdateservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/emotionkeyboard/emotionkeyboard.iml" filepath="$PROJECT_DIR$/emotionkeyboard/emotionkeyboard.iml" />
